@@ -1,4 +1,4 @@
-import json
+import json #escolhi usar o arquviso dados.json
 
 def carregar_faturamento(arquivo):
     # carrega os dados de faturamento a partir de um arquivo JSON
@@ -37,3 +37,10 @@ if menor is not None and maior is not None:
     print(f"Número de dias com faturamento acima da média mensal: {dias_acima_media}")
 else:
     print("Não há faturamento para calcular.")
+
+except FileNotFoundError:
+    print(f"Erro: O arquivo '{arquivo}' não foi encontrado.")
+except json.JSONDecodeError:
+    print(f"Erro: Não foi possível decodificar o arquivo JSON '{arquivo}'.")
+except Exception as e:
+    print(f"Ocorreu um erro inesperado: {e}")
