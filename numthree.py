@@ -23,7 +23,7 @@ def calcular_faturamento(faturamento):
     return menor, maior, dias_acima_media
 
 # caminho do arquivo JSON
-arquivo = 'faturamento.json'
+arquivo = 'dados.json'
 
 # carrega os dados
 faturamento = carregar_faturamento(arquivo)
