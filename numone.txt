@@ -1,0 +1,14 @@
+    Temos duas abordagens para resolver esse problema. Podemos usar a abordagem de simplesmente verificar cada iteração de 0 a 13 (INDICE).
+Na primeira linha teríamos:
+    K = 1, SOMA = 0 + 1 = 1
+Na segunda linha:
+    K = 2, SOMA = 1 + 2 = 3
+Na terceira linha teríamos:
+    K = 3, SOMA = 3 + 3 = 6.
+Seguindo essa lógica até a última iteração, teríamos:
+    K = 13, SOMA = 78 + 13 = 91.
+
+ 
+    A outra abordagem seria a abordagem matemática,  utilizando a fórmula da soma dos números inteiros de 1 até n,
+podemos calcular a soma de forma mais rápida e eficiente. A fórmula é dada por: 
+SOMA = n*(n+1)/2, então, para n = 13, SOMA = 13*(13+1)/2 = 91.
